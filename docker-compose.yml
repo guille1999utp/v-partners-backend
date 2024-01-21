@@ -1,0 +1,20 @@
+version: '3'
+services:
+  graphql-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '4000:4000'
+    depends_on:
+      - mysql-db
+
+  mysql-db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password-v-parterns
+      MYSQL_DATABASE: partners_db
+      MYSQL_USER: partners_user
+      MYSQL_PASSWORD: password-v-parterns
+    ports:
+      - '3306:3306'
