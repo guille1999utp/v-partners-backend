@@ -9,10 +9,15 @@ Este proyecto de tickets proporciona una API para gestionar usuarios y tickets. 
 
 1. Instalación de Dependencias
 
-Asegúrate de tener Node.js instalado en tu máquina. Luego, ejecuta el siguiente comando para instalar las dependencias del proyecto:
+Asegúrate de tener Node.js instalado en tu máquina (https://nodejs.org/en). Luego, ejecuta el siguiente comando para instalar las dependencias del proyecto:
 
 ```console
   npm install
+```
+Si el anterior comando puso problemas por versionamiento de dependecias, ejecutar este otro comando:
+
+```console
+  npm install --force
 ```
 
 2. Configuración de Variables de Entorno
